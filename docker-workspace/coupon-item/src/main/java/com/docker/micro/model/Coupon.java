@@ -1,0 +1,22 @@
+package com.docker.micro.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Entity
+@AllArgsConstructor
+@NoArgsConstructor
+public class Coupon {
+	
+	@Id @GeneratedValue
+	private long id;
+	private String couponCode;
+	private double discount;
+
+}
